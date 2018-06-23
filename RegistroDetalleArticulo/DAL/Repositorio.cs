@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
+using System.Linq.Expressions;
 
-namespace RegistroDetalleArticulo.DAL.Script
+namespace RegistroDetalleArticulo.DAL
 {
     public class Repositorio<T> : IDisposable, IRepository<T> where T : class
     {
@@ -131,5 +133,10 @@ namespace RegistroDetalleArticulo.DAL.Script
         {
             _contexto.Dispose();
         }
+
+ /*       public List<T> GetList(Expression<Func<T, bool>> expression)
+        {
+            throw new NotImplementedException();
+        }*/
     }
 }

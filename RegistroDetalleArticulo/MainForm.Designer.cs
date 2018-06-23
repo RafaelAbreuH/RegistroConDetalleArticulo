@@ -48,7 +48,6 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.ArticulosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.CotizacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -75,6 +74,7 @@
             this.PersonastoolStripButton.Name = "PersonastoolStripButton";
             this.PersonastoolStripButton.Size = new System.Drawing.Size(58, 22);
             this.PersonastoolStripButton.Text = "Personas";
+            this.PersonastoolStripButton.Click += new System.EventHandler(this.PersonastoolStripButton_Click);
             // 
             // toolStripSeparator4
             // 
@@ -89,6 +89,7 @@
             this.ArticulostoolStripButton.Name = "ArticulostoolStripButton";
             this.ArticulostoolStripButton.Size = new System.Drawing.Size(58, 22);
             this.ArticulostoolStripButton.Text = "Articulos";
+            this.ArticulostoolStripButton.Click += new System.EventHandler(this.ArticulostoolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
@@ -103,6 +104,7 @@
             this.CotizacionestoolStripButton.Name = "CotizacionestoolStripButton";
             this.CotizacionestoolStripButton.Size = new System.Drawing.Size(78, 22);
             this.CotizacionestoolStripButton.Text = "Cotizaciones";
+            this.CotizacionestoolStripButton.Click += new System.EventHandler(this.CotizacionestoolStripButton_Click);
             // 
             // menuStrip1
             // 
@@ -140,7 +142,7 @@
             // personasToolStripMenuItem
             // 
             this.personasToolStripMenuItem.Name = "personasToolStripMenuItem";
-            this.personasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personasToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.personasToolStripMenuItem.Text = "Personas";
             this.personasToolStripMenuItem.Click += new System.EventHandler(this.personasToolStripMenuItem_Click);
             // 
@@ -154,6 +156,7 @@
             this.ArticulosToolStripMenuItem.Name = "ArticulosToolStripMenuItem";
             this.ArticulosToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.ArticulosToolStripMenuItem.Text = "Articulos";
+            this.ArticulosToolStripMenuItem.Click += new System.EventHandler(this.ArticulosToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -165,6 +168,7 @@
             this.CotizacionesToolStripMenuItem.Name = "CotizacionesToolStripMenuItem";
             this.CotizacionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.CotizacionesToolStripMenuItem.Text = "Cotizaciones";
+            this.CotizacionesToolStripMenuItem.Click += new System.EventHandler(this.CotizacionesToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
@@ -172,8 +176,7 @@
             this.PersonasToolStripMenuItem1,
             this.toolStripMenuItem3,
             this.ArticulosToolStripMenuItem1,
-            this.toolStripSeparator3,
-            this.CotizacionesToolStripMenuItem1});
+            this.toolStripSeparator3});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
@@ -183,6 +186,7 @@
             this.PersonasToolStripMenuItem1.Name = "PersonasToolStripMenuItem1";
             this.PersonasToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
             this.PersonasToolStripMenuItem1.Text = "Personas";
+            this.PersonasToolStripMenuItem1.Click += new System.EventHandler(this.PersonasToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -194,17 +198,12 @@
             this.ArticulosToolStripMenuItem1.Name = "ArticulosToolStripMenuItem1";
             this.ArticulosToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
             this.ArticulosToolStripMenuItem1.Text = "Articulos";
+            this.ArticulosToolStripMenuItem1.Click += new System.EventHandler(this.ArticulosToolStripMenuItem1_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(138, 6);
-            // 
-            // CotizacionesToolStripMenuItem1
-            // 
-            this.CotizacionesToolStripMenuItem1.Name = "CotizacionesToolStripMenuItem1";
-            this.CotizacionesToolStripMenuItem1.Size = new System.Drawing.Size(141, 22);
-            this.CotizacionesToolStripMenuItem1.Text = "Cotizaciones";
             // 
             // ayudaToolStripMenuItem
             // 
@@ -253,7 +252,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem ArticulosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem CotizacionesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }

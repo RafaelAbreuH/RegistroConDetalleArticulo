@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegistroDetalleArticulo.UI.Consultas;
+using RegistroDetalleArticulo.UI.Registros;
 
 namespace RegistroDetalleArticulo
 {
@@ -20,6 +22,56 @@ namespace RegistroDetalleArticulo
         private void personasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             rPersonas registro = new rPersonas();
+            registro.MdiParent = this;
+            registro.Show();
+        }
+
+        private void ArticulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rArticulos registro = new rArticulos();
+            registro.MdiParent = this;
+            registro.Show();
+        }
+
+        private void CotizacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rCotizaciones registro = new rCotizaciones();
+            registro.MdiParent = this;
+            registro.Show();
+        }
+
+        private void PersonasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cPersonas consulta = new cPersonas();
+            consulta.MdiParent = this;
+            consulta.Show();
+        }
+
+        private void ArticulosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cArticulos consulta = new cArticulos();
+            consulta.MdiParent = this;
+            consulta.Show();
+        }
+
+
+        private void PersonastoolStripButton_Click(object sender, EventArgs e)
+        {
+            rPersonas registro = new rPersonas();
+            registro.MdiParent = this;
+            registro.Show();
+        }
+
+        private void ArticulostoolStripButton_Click(object sender, EventArgs e)
+        {
+            rArticulos registro = new rArticulos();
+            registro.MdiParent = this;
+            registro.Show();
+        }
+
+        private void CotizacionestoolStripButton_Click(object sender, EventArgs e)
+        {
+            rCotizaciones registro = new rCotizaciones();
             registro.MdiParent = this;
             registro.Show();
         }
