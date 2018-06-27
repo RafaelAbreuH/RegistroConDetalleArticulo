@@ -2,7 +2,7 @@ create database ArticulosDb
 go
 use ArticulosDb
 go
-create table Articulos
+/*create table Articulos
 (
 
 	ArticuloId int primary key identity(1,1),
@@ -11,4 +11,4 @@ create table Articulos
 	CantidadCotizada int,
 	FechaVencimiento DateTime
 
-);
+);*/

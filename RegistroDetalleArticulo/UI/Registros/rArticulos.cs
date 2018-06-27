@@ -27,7 +27,7 @@ namespace RegistroDetalleArticulo.UI.Registros
             art.Descripcion = DescripciontextBox.Text;
             art.Precio = Convert.ToInt32(PrecionumericUpDown.Value);
             art.FechaVencimiento = VencimientodateTimePicker.Value;
-            art.CantidadCotizada = Convert.ToInt32(CantCottextBox.Text);
+            art.CantidadCotizada = Convert.ToInt32(CantCotnumericUpDown.Value); // cambiar a numericupdown
 
             return art;
         }
@@ -53,9 +53,9 @@ namespace RegistroDetalleArticulo.UI.Registros
                 GeneralErrorProvider.SetError(PrecionumericUpDown, "Ingrese un precio");
                 paso = true;
             }
-            if (validar == 2 && CantCottextBox.Text == string.Empty)
+            if (validar == 2 && CantCotnumericUpDown.Text == string.Empty)
             {
-                GeneralErrorProvider.SetError(CantCottextBox, "Ingrese la cantidad cotizada");
+                GeneralErrorProvider.SetError(CantCotnumericUpDown, "Ingrese la cantidad cotizada");
             }
             return paso;
 
@@ -81,7 +81,7 @@ namespace RegistroDetalleArticulo.UI.Registros
                 DescripciontextBox.Text = articulo.Descripcion;
                 PrecionumericUpDown.Value = articulo.Precio;
                 VencimientodateTimePicker.Text = articulo.FechaVencimiento.ToString();
-                CantCottextBox.Text = articulo.CantidadCotizada.ToString();
+                CantCotnumericUpDown.Text = articulo.CantidadCotizada.ToString();
 
             }
             else
@@ -117,7 +117,7 @@ namespace RegistroDetalleArticulo.UI.Registros
             IdnumericUpDown.Value = 0;
             DescripciontextBox.Clear();
             PrecionumericUpDown.Value = 0;
-            CantCottextBox.Clear();
+            CantCotnumericUpDown.Value = 0;
         }
 
 

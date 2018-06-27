@@ -33,7 +33,6 @@
             this.Eliminarbutton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.Guardarbutton = new System.Windows.Forms.Button();
-            this.CantCottextBox = new System.Windows.Forms.TextBox();
             this.VencimientodateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.DescripciontextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,9 +44,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PrecionumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.GeneralErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.CantCotnumericUpDown = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GeneralErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CantCotnumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // Eliminarbutton
@@ -85,13 +86,6 @@
             this.Guardarbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.Guardarbutton.UseVisualStyleBackColor = true;
             this.Guardarbutton.Click += new System.EventHandler(this.Guardarbutton_Click);
-            // 
-            // CantCottextBox
-            // 
-            this.CantCottextBox.Location = new System.Drawing.Point(146, 198);
-            this.CantCottextBox.Name = "CantCottextBox";
-            this.CantCottextBox.Size = new System.Drawing.Size(73, 20);
-            this.CantCottextBox.TabIndex = 52;
             // 
             // VencimientodateTimePicker
             // 
@@ -184,15 +178,22 @@
             // 
             this.GeneralErrorProvider.ContainerControl = this;
             // 
+            // CantCotnumericUpDown
+            // 
+            this.CantCotnumericUpDown.Location = new System.Drawing.Point(144, 201);
+            this.CantCotnumericUpDown.Name = "CantCotnumericUpDown";
+            this.CantCotnumericUpDown.Size = new System.Drawing.Size(191, 20);
+            this.CantCotnumericUpDown.TabIndex = 57;
+            // 
             // rArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 378);
+            this.Controls.Add(this.CantCotnumericUpDown);
             this.Controls.Add(this.Eliminarbutton);
             this.Controls.Add(this.Nuevobutton);
             this.Controls.Add(this.Guardarbutton);
-            this.Controls.Add(this.CantCottextBox);
             this.Controls.Add(this.VencimientodateTimePicker);
             this.Controls.Add(this.DescripciontextBox);
             this.Controls.Add(this.label5);
@@ -208,6 +209,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrecionumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GeneralErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CantCotnumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +220,6 @@
         private System.Windows.Forms.Button Eliminarbutton;
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button Guardarbutton;
-        private System.Windows.Forms.TextBox CantCottextBox;
         private System.Windows.Forms.DateTimePicker VencimientodateTimePicker;
         private System.Windows.Forms.TextBox DescripciontextBox;
         private System.Windows.Forms.Label label5;
@@ -230,5 +231,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown PrecionumericUpDown;
         private System.Windows.Forms.ErrorProvider GeneralErrorProvider;
+        private System.Windows.Forms.NumericUpDown CantCotnumericUpDown;
     }
 }
